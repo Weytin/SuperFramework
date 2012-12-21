@@ -1,0 +1,11 @@
+# SuperCMS - htaccess
+#
+# Only for Apache servers.
+
+RewriteEngine On
+
+RewriteRule ^quickregister/start(|/)$ /register.php?register_step=1
+RewriteRule ^quickregister/email_password(|/)$ /register.php?register_step=2
+RewriteRule ^quickregister/captcha(|/)$ /register.php?register_step=3
+
+RewriteRule ^index(|/)$ /index.php
